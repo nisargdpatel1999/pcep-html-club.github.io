@@ -1,5 +1,4 @@
-# [HTML Club Website](http://pcepht.ml)
-[pcepht.ml](http://pcepht.ml)
+# [HTML Club Website `pcepht.ml`](http://pcepht.ml)
 
 Our webpage is ~~trash~~ the greatest thing since sliced bread.
 
