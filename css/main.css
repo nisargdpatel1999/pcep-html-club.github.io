@@ -1,0 +1,128 @@
+html {
+  background: url('../img/bg.png') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+body {
+  margin: 0;
+}
+.content {
+  margin: 8px;
+  /* Move items below menu bar */
+  -o-transform: translate(0, 30px);
+  -moz-transform: translate(0, 30px);
+  -ms-transform: translate(0, 30px);
+  -webkit-transform: translate(0, 30px);
+  transform: translate(0, 30px);
+}
+.content h1, .content h2, .content h3, .content h4, .content h5, .content h6 {
+  font-family: 'Abril Fatface', cursive;
+}
+.content a:link, .content a:visited, .content a:active {
+  color: #000;
+  border-radius: 4px;
+  -webkit-transition: color .3s, background-color .3s;
+  transition: color .3s, background-color .3s;
+}
+.content a:hover {
+  color: #fff;
+  background-color: #000;
+  border-radius: 4px;
+  -webkit-transition: color .3s, background-color .3s;
+  transition: color .3s, background-color .3s;
+}
+.content p, .content li {
+  font-family: 'Alegreya Sans', sans-serif;
+  font-size: 18px;
+}
+.content hr {
+  border: 0;
+  height: 1px;
+  background-color: #000;
+}
+.copyright:after {
+  content: "\00A9 PCEP HTML Club";
+  font-size: 10px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+
+/* Icon CSS */
+
+.icon {
+  background: url('https://avatars3.githubusercontent.com/u/17789176?s=100');
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  width: 100px;
+  height: 100px;
+  z-index: 2;
+  border-radius: 5px;
+  opacity: 0;
+  -webkit-transition: opacity .3s;
+  transition: opacity .3s;
+}
+.icon:hover {
+  opacity: 1;
+  -webkit-transition: opacity .3s;
+  transition: opacity .3s;
+}
+.menuBar:hover ~ .icon {
+  opacity: 1;
+  -webkit-transition: opacity .3s;
+  transition: opacity .3s;
+}
+
+/* Menu Bar CSS */
+
+.menuBar {
+  font-family: 'Oswald', sans-serif;
+  width: 100%;
+  background-color: #000;
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+.menuBar:hover > .menuBarItem, .menuBar:hover > .menuBarItemCurrent {
+  padding: 20px;
+  -webkit-transition: color .3s, background-color .3s, padding .6s;
+  transition: color .3s, background-color .3s, padding .6s;
+}
+.menuBarItem {
+  color: #fff;
+  text-decoration: none;
+  background-color: #333;
+  display: inline-block;
+  padding: 3px;
+  padding-left: 20px;
+  padding-right: 20px;
+  -webkit-transition: color .3s, background-color .3s, padding .3s;
+  transition: color .3s, background-color .3s, padding .3s;
+}
+.menuBarItem:hover {
+  color: #000;
+  text-decoration: none;
+  background-color: #fff;
+  display: inline-block;
+  padding: 3px;
+  padding-left: 20px;
+  padding-right: 20px;
+  -webkit-transition: padding .3s;
+  transition: padding .3s;
+}
+.menuBarItemCurrent {
+  color: #000;
+  text-decoration: none;
+  background-color: #fff;
+  display: inline-block;
+  padding: 3px;
+  padding-left: 20px;
+  padding-right: 20px;
+  -webkit-transition: padding .3s;
+  transition: padding .3s;
+}
